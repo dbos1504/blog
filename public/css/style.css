@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Playfair+Display:400,400i,700|Raleway:300,400,700');
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+img {
+    max-width: 100%;
+}
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0;
+}
+.nav {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+ header ul a {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+.login {
+    text-align: center;
+}
+.login a {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    padding: 20px 10px;
+}
+.forma {
+    text-align: center;
+}
+.forma form {
+    font-family: 'Playfair Display', serif;
+}
+.categories {
+    text-align: right;
+    border: 1px solid #f7f7f7;
+    padding: 15px;
+}
+span,p {
+    font-family: 'Raleway', sans-serif !important;
+}
+.logo {
+    padding:12px;
+}
+.categories a {
+    display: block;
+    padding: 7px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+.sidebar {
+    padding: 10px;
+    border-right: 1px solid #337ab7;
+}
+h1,h4 {
+    text-align: center;
+}
+h1 span {
+    color:#337ab7;
+    font-size: 31px;
+}
+.admin {
+    text-align: center;
+}
+input,textarea {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 5px;
+    margin: 7px;
+    width: 40%;
+}
+input[type='submit'] {
+    background: #337ab7;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px;
+    cursor: pointer;
+}
+input[name="add_submit"] {
+    font-family: 'Playfair Display', serif;
+}
+.search input[type="text"] {
+    width: 90%;
+}
+.search form {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.contact {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.contact form {
+    margin-top: 50px;
+}
+.contact input,
+.contact textarea {
+    width: 60%;
+}
+#wrap_slider {
+    height: 350px;
+    width: 1000px;
+    margin: 0 auto 30px;
+    position: relative;
+    text-align: center;
+}
+#container_slider {
+    height: 350px;
+    width: 1000px;
+    margin: 0 auto 30px;
+    position: relative;
+    text-align: center;
+}
+#container_slider IMG {
+    padding: 3px;
+    border: 1px solid #cfcfcf;
+}
+#img{
+    height: 350px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+}
+#left_holder {
+    height: 350px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+#left_holder i,
+#right_holder i {
+    color: #337ab7;
+    font-size: 40px;
+    padding:4px;
+
+}
+#right_holder {
+    height: 350px;
+    width: 100px;
+    right: 0px;
+    position: absolute;
+    top:0px;
+}
+#left {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:43%;
+    left: 5px;
+    cursor: pointer;
+}
+#right {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:43%;
+    right: 5px;
+    cursor: pointer;
+}
+#left_holder i:hover,
+#right_holder i:hover {
+    background: #fff;
+    opacity: .4;
+    transition: 500ms all linear;
+    border: 1px solid #cfcfcf;
+}
+#left_holder i:hover {
+    transform: translateX(-5px);
+}
+#right_holder i:hover {
+    transform: translateX(5px);
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    padding: 4px 9px;
+}
+.gallery {
+    margin:50px auto;
+}
+.allblog,
+.blog_page {
+    width: 80%;
+    margin: 0 auto;
+}
+.blogs {
+    margin: 15px auto;
+    padding: 30px;
+    border-bottom: 1px solid #cfcfcf;
+}
+.blogs_categorie {
+    width: 90%;
+    margin: 15px auto;
+    padding: 30px;
+}
+.blogs img,
+.blogs_categorie img,
+.blog_page img,
+.gallery img {
+    padding: 3px;
+    border: 1px solid #cfcfcf;
+}
+.blogs h4,
+.blogs_categorie h4,
+.blog_page h4 {
+    text-transform: uppercase;
+}
+.blogs p.blog_text,
+.blogs_categorie p.blog_text {
+    text-align: left;
+    margin-top: 15px;
+}
+.comments,
+.addcomments {
+    padding:15px;
+}
+.categor {
+    margin: 20px auto;
+    height: 570px;
+}
+.admin_main {
+    padding: 30px;
+    margin: 100px auto;
+}
+.admin_sidebar {
+    height: 95vh;
+}
+.admin_add_comment input[type='submit'] {
+    font-family: 'Playfair Display', serif;
+}
+input[type="file"] {
+    display: inline-block;
+}
+.about {
+    width: 80%;
+    margin: 30px auto;
+}
