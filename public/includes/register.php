@@ -1,6 +1,8 @@
 <?php
-session_start();
-require "../../classes/config.php";
+    session_start();
+    $token = md5(uniqid(rand(), true));
+    $_SESSION['token'] = $token;
+    require "../../classes/config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +20,7 @@ require "../../classes/config.php";
         <input type="email" name="reg_email" onblur="validate(this)" placeholder="Enter email" value="<?php if (isset($_POST['reg_email'])) { echo $_POST['reg_email'];} ?>"><br>
         <input type="password" name="reg_password" onblur="validate(this)" placeholder="Enter password"><br>
         <input type="password" name="reg_password2" onblur="validate(this)" placeholder="Enter password again"><br>
+        <input type="hidden" name="token" value="<?php echo $token; ?>" />
         <input type="submit" name="reg_submit" value="REGISTER">
         <?php
         if (isset($_POST['reg_submit'])) {
