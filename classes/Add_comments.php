@@ -14,7 +14,7 @@ class Add_comments
         $login_id = $_SESSION['user_id'];
         $blog_id = $_GET['id'];
 
-        $addRes = Database::$connection->query("INSERT INTO comments VALUES (null, '{$this->add_name}', '{$this->add_comment}', {$blog_id}, {$login_id})");
+        $addRes = Database::$connection->query("INSERT INTO comments VALUES (null, '{$this->add_name}', '{$this->add_comment}', {$blog_id}, {$login_id}),CURDATE()");
         if ($addRes) {
             echo "<p style='color: green;'>Comment added, thank you</p>";
         } else
